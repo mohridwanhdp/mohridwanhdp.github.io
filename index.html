@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"/>
 
         <!--Mapbox Route / Directions-->
-        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
-        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"/>
+        <!-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"/> -->
 
     </head>
     <body>
@@ -67,12 +67,12 @@
                     getLayers();
                 });
 
-                map.addControl(
-                    new MapboxDirections({
-                        accessToken : mapboxgl.accessToken
-                    }),
-                    "bottom-left"
-                );
+                // map.addControl(
+                //     new MapboxDirections({
+                //         accessToken : mapboxgl.accessToken
+                //     }),
+                //     "bottom-left"
+                // );
 
                 function changeMap(basemap){
                     map.setStyle("mapbox://styles/mapbox/" + basemap);
